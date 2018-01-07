@@ -1,0 +1,138 @@
+[root@controller ~]# packstack --answer-file=packstack-answers-20160520-044040.txt
+Welcome to the Packstack setup utility
+
+The installation log file is available at: /var/tmp/packstack/20160520-231437-US45rC/openstack-setup.log
+
+Installing:
+Clean Up                                             [ DONE ]
+Discovering ip protocol version                      [ DONE ]
+Setting up ssh keys                                  [ DONE ]
+Preparing servers                                    [ DONE ]
+Pre installing Puppet and discovering hosts' details [ DONE ]
+Adding pre install manifest entries                  [ DONE ]
+Setting up CACERT                                    [ DONE ]
+Adding AMQP manifest entries                         [ DONE ]
+Adding MariaDB manifest entries                      [ DONE ]
+Adding Apache manifest entries                       [ DONE ]
+Fixing Keystone LDAP config parameters to be undef if empty[ DONE ]
+Adding Keystone manifest entries                     [ DONE ]
+Adding Glance Keystone manifest entries              [ DONE ]
+Adding Glance manifest entries                       [ DONE ]
+Adding Cinder Keystone manifest entries              [ DONE ]
+Checking if the Cinder server has a cinder-volumes vg[ DONE ]
+Adding Cinder manifest entries                       [ DONE ]
+Adding Nova API manifest entries                     [ DONE ]
+Adding Nova Keystone manifest entries                [ DONE ]
+Adding Nova Cert manifest entries                    [ DONE ]
+Adding Nova Conductor manifest entries               [ DONE ]
+Creating ssh keys for Nova migration                 [ DONE ]
+Gathering ssh host keys for Nova migration           [ DONE ]
+Adding Nova Compute manifest entries                 [ DONE ]
+Adding Nova Scheduler manifest entries               [ DONE ]
+Adding Nova VNC Proxy manifest entries               [ DONE ]
+Adding OpenStack Network-related Nova manifest entries[ DONE ]
+Adding Nova Common manifest entries                  [ DONE ]
+Adding Neutron VPNaaS Agent manifest entries         [ DONE ]
+Adding Neutron FWaaS Agent manifest entries          [ DONE ]
+Adding Neutron LBaaS Agent manifest entries          [ DONE ]
+Adding Neutron API manifest entries                  [ DONE ]
+Adding Neutron Keystone manifest entries             [ DONE ]
+Adding Neutron L3 manifest entries                   [ DONE ]
+Adding Neutron L2 Agent manifest entries             [ DONE ]
+Adding Neutron DHCP Agent manifest entries           [ DONE ]
+Adding Neutron Metering Agent manifest entries       [ DONE ]
+Adding Neutron Metadata Agent manifest entries       [ DONE ]
+Adding Neutron SR-IOV Switch Agent manifest entries  [ DONE ]
+Checking if NetworkManager is enabled and running    [ DONE ]
+Adding OpenStack Client manifest entries             [ DONE ]
+Adding Horizon manifest entries                      [ DONE ]
+Adding Swift Keystone manifest entries               [ DONE ]
+Adding Swift builder manifest entries                [ DONE ]
+Adding Swift proxy manifest entries                  [ DONE ]
+Adding Swift storage manifest entries                [ DONE ]
+Adding Swift common manifest entries                 [ DONE ]
+Adding Gnocchi manifest entries                      [ DONE ]
+Adding Gnocchi Keystone manifest entries             [ DONE ]
+Adding MongoDB manifest entries                      [ DONE ]
+Adding Redis manifest entries                        [ DONE ]
+Adding Ceilometer manifest entries                   [ DONE ]
+Adding Ceilometer Keystone manifest entries          [ DONE ]
+Adding Aodh manifest entries                         [ DONE ]
+Adding Aodh Keystone manifest entries                [ DONE ]
+Adding Nagios server manifest entries                [ DONE ]
+Adding Nagios host manifest entries                  [ DONE ]
+Copying Puppet modules and manifests                 [ DONE ]
+Applying 172.20.52.19_prescript.pp
+Applying 172.20.52.99_prescript.pp
+Applying 172.20.52.39_prescript.pp
+172.20.52.39_prescript.pp:                           [ DONE ]        
+172.20.52.99_prescript.pp:                           [ DONE ]        
+172.20.52.19_prescript.pp:                           [ DONE ]        
+Applying 172.20.52.19_amqp.pp
+Applying 172.20.52.19_mariadb.pp
+172.20.52.19_amqp.pp:                                [ DONE ]      
+172.20.52.19_mariadb.pp:                             [ DONE ]      
+Applying 172.20.52.19_apache.pp
+172.20.52.19_apache.pp:                              [ DONE ]     
+Applying 172.20.52.19_keystone.pp
+Applying 172.20.52.19_glance.pp
+Applying 172.20.52.19_cinder.pp
+172.20.52.19_keystone.pp:                            [ DONE ]       
+172.20.52.19_cinder.pp:                              [ DONE ]       
+172.20.52.19_glance.pp:                              [ DONE ]       
+Applying 172.20.52.19_api_nova.pp
+172.20.52.19_api_nova.pp:                            [ DONE ]       
+Applying 172.20.52.19_nova.pp
+Applying 172.20.52.99_nova.pp
+Applying 172.20.52.39_nova.pp
+Applying 172.20.52.19_neutron.pp
+172.20.52.19_nova.pp:                                [ DONE ]      
+172.20.52.39_nova.pp:                                [ DONE ]      
+172.20.52.99_nova.pp:                                [ DONE ]      
+172.20.52.19_neutron.pp:                             [ DONE ]      
+Applying 172.20.52.99_neutron.pp
+Applying 172.20.52.39_neutron.pp
+172.20.52.39_neutron.pp:                             [ DONE ]      
+172.20.52.99_neutron.pp:                             [ DONE ]      
+Applying 172.20.52.19_osclient.pp
+Applying 172.20.52.19_horizon.pp
+172.20.52.19_osclient.pp:                            [ DONE ]       
+172.20.52.19_horizon.pp:                             [ DONE ]       
+Applying 172.20.52.19_ring_swift.pp
+172.20.52.19_ring_swift.pp:                          [ DONE ]         
+Applying 172.20.52.19_swift.pp
+172.20.52.19_swift.pp:                               [ DONE ]    
+Applying 172.20.52.19_gnocchi.pp
+172.20.52.19_gnocchi.pp:                             [ DONE ]      
+Applying 172.20.52.19_mongodb.pp
+Applying 172.20.52.19_redis.pp
+172.20.52.19_mongodb.pp:                             [ DONE ]      
+172.20.52.19_redis.pp:                               [ DONE ]      
+Applying 172.20.52.19_ceilometer.pp
+172.20.52.19_ceilometer.pp:                          [ DONE ]         
+Applying 172.20.52.19_aodh.pp
+172.20.52.19_aodh.pp:                                [ DONE ]   
+Applying 172.20.52.19_nagios.pp
+Applying 172.20.52.19_nagios_nrpe.pp
+Applying 172.20.52.99_nagios_nrpe.pp
+Applying 172.20.52.39_nagios_nrpe.pp
+172.20.52.99_nagios_nrpe.pp:                         [ DONE ]          
+172.20.52.39_nagios_nrpe.pp:                         [ DONE ]          
+172.20.52.19_nagios.pp:                              [ DONE ]          
+172.20.52.19_nagios_nrpe.pp:                         [ DONE ]          
+Applying Puppet manifests                            [ DONE ]
+Finalizing                                           [ DONE ]
+
+ **** Installation completed successfully ******
+
+Additional information:
+ * Time synchronization installation was skipped. Please note that unsynchronized time on server instances might be problem for some OpenStack components.
+ * File /root/keystonerc_admin has been created on OpenStack client host 172.20.52.19. To use the command line tools you need to source the file.
+ * To access the OpenStack Dashboard browse to http://172.20.52.19/dashboard .
+Please, find your login credentials stored in the keystonerc_admin in your home directory.
+ * To use Nagios, browse to http://172.20.52.19/nagios username: nagiosadmin, password: nagios
+ * Because of the kernel update the host 172.20.52.19 requires reboot.
+ * The installation log file is available at: /var/tmp/packstack/20160520-231437-US45rC/openstack-setup.log
+ * The generated manifests are available at: /var/tmp/packstack/20160520-231437-US45rC/manifests
+[root@controller ~]# 
+
